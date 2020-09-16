@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap Project</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome.css">
+</head>
+<body>
+	<div class="mani-wrapper">
+		<div class="wrapper">
+			<div class="mini-nav bg-info">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2 col-sm-2 col-lg-2">
+							<div class="logo">
+								<img src="../images/genie.png">
+							</div>
+						</div>
+						<div class="col-md-10 col-sm-10 col-sm-10">
+							<div class="sing-up">
+								<span data-toggle="modal" data-target="#sing-up"> SingUp </span>
+								<span> | </span>
+								<span data-toggle="modal" data-target="#login"> Login </span>
+							</div>
+							<div class="sing-up-form">
+								<div class="modal fade" id="sing-up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  	<div class="modal-dialog">
+								    	<div class="modal-content">
+								      		<div class="modal-header bg-info text-white">
+								        		<h5 class="modal-title" id="exampleModalLabel">Singup</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+								      		</div>
+								      		<div class="modal-body">
+								        		<form>
+												    <div class="form-group">
+												      <input type="text" class="form-control focus-change" placeholder="First name">
+												    </div>
+												    <div class="form-group">
+												      <input type="text" class="form-control focus-change" placeholder="Last name">
+												    </div>
+												  	
+												  	<div class="form-group">
+													    <input type="email" class="form-control focus-change" id="exampleInputEmail1" placeholder="Email">
+													    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+													</div>
+													<div class="form-group">
+													    <input type="password" class="form-control focus-change" id="exampleInputPassword1" placeholder="Password">
+													</div>
+													<div class="form-group">
+													    <input type="password" class="form-control focus-change" id="exampleInputPassword1" placeholder="Confirm Password">
+													</div>
+													<div class="form-check form-check-inline">
+													  	<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+													  	<label class="form-check-label" for="inlineRadio1"> Male </label>
+													</div>
+													<div class="form-check form-check-inline">
+													  	<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+													  	<label class="form-check-label" for="inlineRadio2"> Female </label>
+													</div>
+												</form>
+								      		</div>
+								      		<div class="modal-footer">
+								        		<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancle</button>
+								        		<button type="button" class="btn btn-outline-info">Singup</button>
+								      		</div>
+								    	</div>
+								  	</div>
+								</div>
+							</div>
+							<div class="login-form">
+								<div class="modal fade" id="login" tabindex="-1" aria-labelledby="login-form" aria-hidden="true">
+								  	<div class="modal-dialog">
+								    	<div class="modal-content">
+								      		<div class="modal-header bg-info text-white">
+								        		<h5 class="modal-title" id="login-form">Login</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          	<span aria-hidden="true">&times;</span>
+										        </button>
+								      		</div>
+									      	<div class="modal-body">
+									        	<form>
+												  	<div class="form-group">
+												    	<input type="email" class="form-control focus-change" id="exampleInputEmail1" placeholder="Email">
+												    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+												  	</div>
+												  	<div class="form-group">
+												    	<input type="password" class="form-control focus-change" id="exampleInputPassword1" placeholder="Password">
+												  	</div>
+												</form>
+									      	</div>
+								      		<div class="modal-footer">
+										        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancle</button>
+										        <button type="button" class="btn btn-outline-info">Login</button>
+								      		</div>
+								    	</div>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<a class="navbar-brand" href="#">Menu</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    	<span class="navbar-toggler-icon"></span>
+					    </button>
+
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					        <ul class="navbar-nav mr-auto">
+					            <li class="nav-item active">
+					                <a class="nav-link text-info" href="../index.html">Home <span class="sr-only">(current)</span></a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link text-info" href="store.html">Store</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link text-info" href="market.html">Market</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link text-info" href="shopping.html">Shopping</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link text-info" href="contact.html">Community</a>
+					      		</li>
+					    	</ul>
+						    <form class="form-inline my-2 my-lg-0">
+						      	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						      	<button class="btn btn btn-outline-info my-2 my-sm-0 menu-btn" type="submit">
+						      		Search
+						  		</button>
+						    </form>
+					  	</div>
+					</nav>
+				</div>
+			</div>
+			<div class="slider-img">
+				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+				  	<div class="carousel-inner">
+					    <div class="carousel-item active">
+					      	<img src="../images/nikemodel.png" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      	<img src="../images/erkemodel1.png" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      	<img src="../images/adidasmodel.png" class="d-block w-100" alt="...">
+					    </div>
+				  	</div>
+				  	<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+				    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    	<span class="sr-only">Previous</span>
+				  	</a>
+				  	<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+				    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    	<span class="sr-only">Next</span>
+				  	</a>
+				</div>
+			</div>
+			<div class="market-place mt-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<img src="../images/shooe5.png" alt="..." class="img-thumbnail">	
+						</div>
+						<div class="col-md-6 col-lg-6 col-sm-6">
+							<h3 class="text-info"> Sport Shooe </h3>
+							<p class="text-secondary"> Brand  : ERKE </p>
+							<p class="text-secondary"> Seller : Genie </p>
+							<p class="text-secondary"> Price  : $65 </p>
+							<input type="number" name="number" placeholder="1" class="form-control mt-5">
+				 			<a href="#" type="button" class="btn btn-outline-info mt-5 rounded-pill">
+				 				<i class="fas fa-shopping-basket"></i> Add To Cart 
+				 			</a>
+				 			<a href="#" type="button" class="btn btn-outline-info mt-5 rounded-pill">
+				 				<i class="fas fa-heart"></i> Add To Order 
+				 			</a>
+				 			<div class="goback mt-4">
+				 				<a href="../index.html" class="stretched-link text-info">
+				 					<i class="fas fa-angle-double-left"></i>
+				 					 Home Page 
+				 				</a>
+				 			</div>
+				 			<div class="follow-icon mt-5">
+				 				<ul class="pl-0"> 
+									<li>
+										<button type="button" class="btn btn-primary">
+											<i class="fab fa-facebook-f"></i> Like
+										</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-info">
+											<i class="fab fa-twitter"></i> Tweet
+										</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-danger">
+											<i class="fab fa-google"></i> +
+										</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-primary btn-lg active">
+											<i class="fab fa-invision"></i> Share
+										</button>
+									</li>
+								</ul>
+				 			</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer bg-info mt-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="footer1">
+								<p> MENU </p>
+								<ul>
+									<li>
+										<a href="#"> HOME </a>
+									</li>
+									<li>
+										<a href="#"> STORE </a>
+									</li>
+									<li>
+										<a href="#"> MARKET </a>
+									</li>
+									<li>
+										<a href="#"> SHOPPING </a>
+									</li>
+									<li>
+										<a href="#"> COMMUNITY </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="footer2">
+								<p> HELP </p>
+								<ul>
+									<li>
+										<a href="#"> MEMBER SERVICE </a>
+									</li>
+									<li>
+										<a href="#"> FORGET PASSWORD </a>
+									</li>
+									<li>
+										<a href="#"> REPORT US </a>
+									</li>
+									<li>
+										<a href="#"> BECOME MEMBER </a>
+									</li>
+									<li>
+										<a href="#"> REWARD </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-lg-4">
+							<div class="footer3">
+								<p> CONTACT US </p>
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fas fa-map-marker-alt"></i>
+											GENIE HOLDINGS PTE LTD
+											MYANMAR Shopping Center,
+											Thamine Junction , 93/B
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-phone"></i>
+											+959-7934-77310
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+											dev.htetphyoaung@gmail.com
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="follow-us">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-lg-12">
+								<div class="follow">
+									<ul> 
+										<li>
+											<i class="fab fa-twitter"></i>
+										</li>
+										<li>
+											<i class="fab fa-facebook-f"></i>
+										</li>
+										<li>
+											<i class="fab fa-linkedin-in"></i>
+										</li>
+										<li>
+											<i class="fab fa-google-plus-g"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="copy-right">
+						<p>
+							<i class="far fa-copyright"></i> 2020 By <a href="index.html"> Genie.OnlineShop. </a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/all.min.js"></script>
+	<script>
+		$(window).scroll(function() {
+			var anime = $(document).scrollTop();
+			if( anime > 120 ){
+				$(".menu").addClass("rf-fixed bg-info");
+				$(".nav-link").addClass("text-light");
+				$(".menu-btn").addClass("btn-outline-light");
+			}
+			else {
+				$(".menu").removeClass("rf-fixed bg-info");
+				$(".nav-link").removeClass("text-light");
+				$(".menu-btn").removeClass("btn-outline-light");
+			}
+		})
+	</script>
+</body>
+</html>
